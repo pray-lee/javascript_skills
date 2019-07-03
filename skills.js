@@ -39,3 +39,7 @@ console.log(urlParams.get('a')); // "edit"
 console.log(urlParams.getAll('b')); // ["edit"]
 console.log(urlParams.toString()); // "?a=1&b=2
 console.log(urlParams.append('c', '3')); // "?a=1&b=2&c=3
+
+// 生成一个有长度的空数组
+let arr = new Array(3).join('.').split('.')
+console.log(arr) // ['', '', '']

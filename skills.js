@@ -1,4 +1,4 @@
-// javascript技巧
+// javascript技巧...
 
 // 数组去重
 let arr = [...new Set([1,1,2,2,3,4,4,5])]

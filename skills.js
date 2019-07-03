@@ -43,3 +43,5 @@ console.log(urlParams.append('c', '3')); // "?a=1&b=2&c=3
 // 生成一个有长度的空数组
 let arr = new Array(3).join('.').split('.')
 console.log(arr) // ['', '', '']
+let arr1 = [1,2,3,4,5,6,7].fill('')
+console.log(arr1) // ['', '', '', '', '', '', '']

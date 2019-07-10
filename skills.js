@@ -76,14 +76,14 @@ function throttle(fn, threshold) {
         }
         const context = this
         const args = arguments
-        let curr = new Date() - start
-        if (curr > threshold) { // 如果时间间隔大于等于设定的值，才会执行
+        let curr = new Date()
+        if (curr - start > threshold) { // 如果时间间隔大于等于设定的值，才会执行
             fn.apply(context, args)
-            curr = start
+            start = curr
         } else {
             // 始终要走一次
-            setTimeout(function() {
-                fb.apply(context, args)
+            time = setTimeout(function() {
+                fn.apply(context, args)
             }, threshold)
         }
     }
